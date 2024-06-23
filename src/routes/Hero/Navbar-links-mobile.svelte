@@ -69,7 +69,7 @@
 			event.preventDefault();
 			if (!event.target?.className.includes('navbar-close')) return;
 			//console.log(`this is toggleNavbar ${event.target?.className.includes('navbar-close')}`);
-			menuIconClass.removeAttribute('class');
+			menuIconClass.setAttribute('class', 'sm:hidden');
 			classContains = false;
 		};
 
@@ -83,7 +83,7 @@
 		const closeNavbar = (event) => {
 			if (event.target.closest('.navbar-mobile') || event.target.closest('.navbar-icon')) return;
 			classContains = false;
-			menuIconClass.removeAttribute('class');
+			menuIconClass.setAttribute('class', 'sm:hidden');
 		};
 
 		document.addEventListener('click', closeNavbar);
