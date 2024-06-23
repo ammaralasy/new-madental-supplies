@@ -81,7 +81,13 @@
 			return classContains;
 		};
 		const closeNavbar = (event) => {
-			if (event.target.closest('.navbar-mobile') || event.target.closest('.navbar-icon')) return;
+			let width = window.innerWidth;
+			if (
+				event.target.closest('.navbar-mobile') ||
+				event.target.closest('.navbar-icon') ||
+				width >= 641
+			)
+				return;
 			classContains = false;
 			menuIconClass.setAttribute('class', 'sm:hidden');
 		};
