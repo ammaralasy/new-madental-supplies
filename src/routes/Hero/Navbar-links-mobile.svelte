@@ -12,6 +12,8 @@
 	const classImgLeftIconsMob = ' sm:hidden h-4 max-w-md';
 	const classImgCloseNavbarMob = ' navbar-close sm:hidden h-5 max-w-md';
 	let menuIconClass: HTMLElement;
+	let width;
+
 	const leftSideIcons = [
 		{
 			id: 1,
@@ -74,14 +76,17 @@
 		};
 
 		handleClick = (event: MouseEvent & { currentTarget: EventTarget & HTMLAnchorElement }) => {
-			//event.preventDefault();
+			event.preventDefault();
+			width = window.innerWidth;
+			if (width >= 641) return;
 			classContains = event.target?.className.includes('navbar-icon');
 			menuIconClass.setAttribute('class', 'hidden');
-			//console.log(`this is handleClick ${classContains}`);
+			console.log(`this is handleClick ${classContains} and this width ${width}`);
 			return classContains;
 		};
 		const closeNavbar = (event) => {
-			let width = window.innerWidth;
+			event.preventDefault();
+			width = window.innerWidth;
 			if (
 				event.target.closest('.navbar-mobile') ||
 				event.target.closest('.navbar-icon') ||

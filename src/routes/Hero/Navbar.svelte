@@ -4,7 +4,7 @@
 	import { onMount } from 'svelte';
 
 	const classMainLeftIcons =
-		'flex items-center justify-start  sm:justify-end space-x-10 sm:space-x-6 h-full w-full navbar-mobile';
+		'flex items-center justify-start  sm:justify-center space-x-10 sm:space-x-6 h-full w-full navbar-mobile';
 	const classImgLeftIcons = 'hidden sm:block h-4 md:h-4 lg:h-5';
 	const classImgNavIcon = ' navbar-icon sm:hidden h-8 w-9 max-w-md';
 	let classContains: boolean = false;
@@ -21,39 +21,6 @@
 		// };
 		//document.addEventListener('click', closeNavbar);
 	});
-
-	const navbarLinks = [
-		{
-			id: 1,
-			linkName: 'Home',
-			src: '/home-1@2x.png',
-			alt: 'Home link'
-		},
-		{
-			id: 2,
-			linkName: 'About',
-			src: '/info-circle@2x.png',
-			alt: 'About link'
-		},
-		{
-			id: 3,
-			linkName: 'Logo',
-			src: '/logo.png',
-			alt: 'Madental Supplies Logo'
-		},
-		{
-			id: 4,
-			linkName: 'Brand',
-			src: '/fi-rr-megaphone@2x.png',
-			alt: 'Brand link'
-		},
-		{
-			id: 5,
-			linkName: 'Contact',
-			src: '/phone@2x.png',
-			alt: 'Contact link'
-		}
-	];
 </script>
 
 <nav class="bg-madental-red sm:bg-white py-2">
