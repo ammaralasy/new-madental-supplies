@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import BlazeSlider from 'blaze-slider';
-
+	import { scrollTo, scrollRef, scrollTop } from 'svelte-scrolling';
 	const slides = [
 		{ id: '0', src: 'https://via.placeholder.com/600x400?text=Slide+1', alt: 'Slide 1' },
 		{ id: '1', src: 'https://via.placeholder.com/600x400?text=Slide+2', alt: 'Slide 2' },
@@ -65,7 +65,7 @@
 	});
 </script>
 
-<div class="blaze-slider">
+<div class="blaze-slider" use:scrollRef={'brand'} id="brand">
 	<div class="blaze-container">
 		<div class="blaze-track-container">
 			<div class="blaze-track">

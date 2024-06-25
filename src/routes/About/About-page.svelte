@@ -1,6 +1,7 @@
 <script lang="ts">
 	import About from './About.svelte';
 	import Mission from './Mission.svelte';
+	import { scrollTo, scrollRef, scrollTop } from 'svelte-scrolling';
 	const header1 =
 		'<span class="underline underline-offset-8 decoration-white decoration-3">Abou</span>t Us';
 	const header2 =
@@ -41,7 +42,7 @@
 	];
 </script>
 
-<div class=" bg-red-600">
+<div class=" bg-red-600" use:scrollRef={'about'} id="about">
 	<About {header1} {aboutParagraphs} />
 
 	<Mission {header2} {missionParagraphs} />

@@ -29,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"blaze-slider": "^1.9.3"
+		"blaze-slider": "^1.9.3",
+		"svelte-scrolling": "^1.4.0"
 	}
 }

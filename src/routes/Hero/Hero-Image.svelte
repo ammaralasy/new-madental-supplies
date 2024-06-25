@@ -1,6 +1,12 @@
+<script lang="ts">
+	import { scrollTo, scrollRef, scrollTop } from 'svelte-scrolling';
+</script>
+
 <div
 	class="relative bg-cover bg-center bg-no-repeat h-screen"
 	style="background-image: url('/hero-image.jpg');"
+	use:scrollRef={'home'}
+	id="home"
 >
 	<div class="absolute inset-0 bg-black opacity-55"></div>
 	<div class="flex h-full">

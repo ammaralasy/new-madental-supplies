@@ -3,7 +3,7 @@
 	export let aboutParagraphs, header1;
 </script>
 
-<div class="max-w-4xl mx-auto px-4 py-8 h-max w-screen">
+<div class="max-w-4xl mx-auto px-4 py-12 h-max w-screen">
 	<div class="flex flex-col items-stretch md:flex-row md:items-start rounded-lg overflow-hidden">
 		<AboutImage />
 		<div class="md:w-1/2 p-8">

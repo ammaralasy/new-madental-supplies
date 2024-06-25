@@ -1,7 +1,6 @@
 <script lang="ts">
 	import NavbarLinksDesktop from './Navbar-links-desktop.svelte';
 	import NavbarLinksMobile from './Navbar-links-mobile.svelte';
-	import { onMount } from 'svelte';
 
 	const classMainLeftIcons =
 		'flex items-center justify-start  sm:justify-center space-x-10 sm:space-x-6 h-full w-full navbar-mobile';
@@ -10,22 +9,11 @@
 	let classContains: boolean = false;
 	//let navbarClicked: boolean = false;
 	//let handleClick;
-
-	onMount(() => {
-		//const navbarIcon = document.querySelectorAll('.navbar-icon');
-		// function to listen to click outside of hamburger icon and close if the click is outside
-		// const closeNavbar = (event) => {
-		// 	if (event.target.closest('.navbar-icon')) return (navbarClicked = true);
-		// 	classContains = false;
-		// 	navbarClicked = false;
-		// };
-		//document.addEventListener('click', closeNavbar);
-	});
 </script>
 
-<nav class="bg-madental-red sm:bg-white py-2">
+<nav class="bg-madental-red sm:bg-white py-2 sticky top-0 z-20 w-screen">
 	<div class="max-w-7xl mx-auto px-4 sm:px-8">
-		<div class="flex justify-between items-center h-[80px] font-montserrat relative">
+		<div class="flex justify-between items-center h-[80px] font-montserrat">
 			<!-- Left side icons -->
 			<NavbarLinksMobile
 				{classContains}

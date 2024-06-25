@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { scrollTo, scrollRef, scrollTop } from 'svelte-scrolling';
 	const classDiv = 'flex items-center mb-4';
 	const classImg = 'h-4 mr-2';
 	const classP = 'text-md md:text-lg';
@@ -20,7 +21,7 @@
 	];
 </script>
 
-<div class="bg-red-600 w-full h-screen flex justify-center">
+<div class="bg-red-600 w-full h-screen flex justify-center" use:scrollRef={'Contact'} id="Contact">
 	<div
 		class="text-center text-white font-montserrat flex flex-col sm:flex-row items-center justify-center w-full"
 	>
@@ -33,7 +34,7 @@
 		<div class="flex flex-col items-start justify-center w-2/3 text-left">
 			{#each contacts as contact (contact.id)}
 				<div class={classDiv}>
-					<img class={classImg} src="./placeholder.png" alt={contact.alt} />
+					<img class={classImg} src={contact.src} alt={contact.alt} />
 					<p class={classP}>{contact.text}</p>
 				</div>
 			{/each}
