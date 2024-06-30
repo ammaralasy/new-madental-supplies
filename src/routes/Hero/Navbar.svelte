@@ -11,9 +11,9 @@
 	//let handleClick;
 </script>
 
-<nav class="bg-madental-red sm:bg-white py-2 sticky top-0 z-20 w-screen">
-	<div class="max-w-7xl mx-auto px-4 sm:px-8">
-		<div class="flex justify-between items-center h-[80px] font-montserrat">
+<nav class="bg-madental-red sm:bg-white py-2 sticky top-0 z-20 w-full">
+	<div class="mx-auto px-4 sm:px-8">
+		<div class="flex justify-between items-center h-[80px] font-montserrat w-full">
 			<!-- Left side icons -->
 			<NavbarLinksMobile
 				{classContains}

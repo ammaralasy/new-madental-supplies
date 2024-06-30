@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { scrollTo, scrollRef, scrollTop } from 'svelte-scrolling';
+	import { scrollRef } from 'svelte-scrolling';
 	const classDiv = 'flex items-center mb-4';
 	const classImg = 'h-4 mr-2';
 	const classP = 'text-md md:text-lg';
@@ -21,7 +21,11 @@
 	];
 </script>
 
-<div class="bg-red-600 w-full h-screen flex justify-center" use:scrollRef={'Contact'} id="Contact">
+<div
+	class="bg-red-600 w-full h-screen flex justify-center"
+	use:scrollRef={'contact'}
+	id="contact"
+>
 	<div
 		class="text-center text-white font-montserrat flex flex-col sm:flex-row items-center justify-center w-full"
 	>

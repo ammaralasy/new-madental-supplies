@@ -1,4 +1,4 @@
-<main class="flex items-center justify-center h-screen">
+<main class="flex items-center justify-center max-h-max py-28">
 	<div class="bg-white p-8 rounded-lg shadow-lg max-w-lg w-full font-montserrat">
 		<h1 class="text-3xl font-bold mb-2">Write To Us</h1>
 		<p class="mb-6 text-gray-700">When you are looking for your dental needs</p>

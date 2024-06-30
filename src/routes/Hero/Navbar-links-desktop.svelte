@@ -1,10 +1,10 @@
 <script lang="ts">
 	const classMain = 'hidden sm:flex items-center h-full';
-	const classMainLogo = 'flex items-center h-full';
+	const classMainLogo = 'flex items-center h-full pr-4 sm:pr-0';
 	const classImg = 'h-4 md:h-4 lg:h-5 mr-1.5 pt-0.5 ';
 	const classA = ' hidden sm:flex items-center text-gray-900 hover:text-gray-700';
 	const classImgLogo = 'h-16 md:h-16 lg:h-20 max-w-sm';
-	import { scrollTo, scrollRef, scrollTop } from 'svelte-scrolling';
+	import { scrollTo } from 'svelte-scrolling';
 	const navbarLinks = [
 		{
 			id: 1,
@@ -44,7 +44,7 @@
 </script>
 
 <div
-	class="flex items-center justify-end sm:justify-center space-x-2 md:space-x-6 text-base md:text-base lg:text-lg basis-1/2 sm:basis-8/12 h-full"
+	class="flex items-center justify-end sm:justify-center space-x-2 md:space-x-6 text-base md:text-base lg:text-lg basis-1/2 sm:basis-8/12 h-full w-full"
 >
 	{#each navbarLinks as navbarLink (navbarLink.id)}
 		<div class={navbarLink.linkName !== 'Logo' ? classMain : classMainLogo}>

@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { scrollTo, scrollRef, scrollTop } from 'svelte-scrolling';
+	import { scrollRef } from 'svelte-scrolling';
 </script>
 
 <div
-	class="relative bg-cover bg-center bg-no-repeat h-screen"
+	class="relative bg-cover bg-center bg-no-repeat h-screen max-h-max"
 	style="background-image: url('/hero-image.jpg');"
 	use:scrollRef={'home'}
 	id="home"

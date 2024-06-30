@@ -1,7 +1,7 @@
 <script lang="ts">
 	import About from './About.svelte';
 	import Mission from './Mission.svelte';
-	import { scrollTo, scrollRef, scrollTop } from 'svelte-scrolling';
+	import { scrollRef } from 'svelte-scrolling';
 	const header1 =
 		'<span class="underline underline-offset-8 decoration-white decoration-3">Abou</span>t Us';
 	const header2 =
