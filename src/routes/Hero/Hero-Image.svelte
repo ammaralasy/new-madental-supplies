@@ -44,7 +44,7 @@
 					href="#write-to-us"
 					class=" bg-madental-red hover:bg-red-700 text-white font-montserrat font-light py-2 px-4 rounded shadow-lg transition duration-300 ease-in-out"
 					use:scrollTo={{ ref:'write-to-us', duration: 1000, offset: -60 }}
-					on:click|preventDefault= {window.matchMedia('(max-width: 640px)').matches ? () => $scrollingStore('write-to-us') : null}
+					
 				>
 					Write to us
 				</a>

@@ -205,8 +205,8 @@
 			{/if}
 		{/each}
 		<!-- This is close menu icon, store and language icons for mobile view only -->
-		{#if classContains}
-			<div class="flex space-x-6 w-full pl-6" in:fly>
+		
+			<div class="flex space-x-6 w-full pl-6" in:fly class:hide={!classContains}>
 				{#each leftSideIconsMob as leftSideIcon (leftSideIcon.id)}
 					{#if leftSideIcon.iconName === 'closeNavbar'}
 						<button class={classAMenuIcon} on:click={(event) => toggleNavbar(event)}>
@@ -219,7 +219,7 @@
 					{/if}
 				{/each}
 			</div>
-		{/if}
+		
 	</div>
 	<!-- This the vertical navigation menu for mobile view only it shows when menu icon bar is clicked only -->
 	{#if classContains}
@@ -240,3 +240,8 @@
 		</div>
 	{/if}
 </div>
+<style>
+	.hide {
+		display: none
+	}
+</style>

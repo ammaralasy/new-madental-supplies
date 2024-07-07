@@ -30,7 +30,9 @@ if(width <= 641) {
   // Implement the function logic here
   const findScroll = scrollingArray.find((obj) => obj.id === element);
 			console.log(findScroll['view']);
-			findScroll['view'].scrollIntoView(true);
+			findScroll['view'].scrollIntoView( {behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'});
   console.log(`Result of scrolling function with args ${element}`);
 }
 }
