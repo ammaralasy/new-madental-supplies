@@ -206,7 +206,7 @@
 		{/each}
 		<!-- This is close menu icon, store and language icons for mobile view only -->
 		
-			<div class="flex space-x-6 w-full pl-6" in:fly class:hide={!classContains}>
+			<div class="flex space-x-6 w-full pl-2 relative left-[calc(7vw-25px)]" in:fly class:hide={!classContains}>
 				{#each leftSideIconsMob as leftSideIcon (leftSideIcon.id)}
 					{#if leftSideIcon.iconName === 'closeNavbar'}
 						<button class={classAMenuIcon} on:click={(event) => toggleNavbar(event)}>
