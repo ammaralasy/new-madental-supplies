@@ -4,7 +4,7 @@
 	import AboutPage from './About/About-page.svelte';
 	import WriteToUs from './Write-To-Us/Write-to-us.svelte';
 	import ContactUs from './Contact-us/Contact-us.svelte';
-	import { scrollTo, scrollRef, scrollTop } from 'svelte-scrolling';
+	//import { onMount } from 'svelte';
 </script>
 
 <HeroPage />

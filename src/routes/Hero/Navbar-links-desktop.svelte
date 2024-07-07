@@ -11,34 +11,40 @@
 			linkName: 'Home',
 			src: '/home-1@2x.png',
 			alt: 'Home link',
-			href: '#home'
+			href: '#home',
+			goTo: 'home'
 		},
 		{
 			id: 2,
 			linkName: 'About',
 			src: '/info-circle@2x.png',
 			alt: 'About link',
-			href: '#about'
+			href: '#about',
+			goTo: 'about'
 		},
 		{
 			id: 3,
 			linkName: 'Logo',
 			src: '/logo.png',
-			alt: 'Madental Supplies Logo'
+			alt: 'Madental Supplies Logo',
+			href: "#home",
+			goTo: 'home'
 		},
 		{
 			id: 4,
 			linkName: 'Brand',
 			src: '/fi-rr-megaphone@2x.png',
 			alt: 'Brand link',
-			href: '#brand'
+			href: '#brand',
+			goTo: 'brand'
 		},
 		{
 			id: 5,
 			linkName: 'Contact',
 			src: '/phone@2x.png',
 			alt: 'Contact link',
-			href: '#contact'
+			href: '#contact', 
+			goTo: 'contact'
 		}
 	];
 </script>
@@ -51,7 +57,7 @@
 			<a
 				href={navbarLink.href}
 				class={navbarLink.linkName !== 'Logo' ? classA : ''}
-				use:scrollTo={{ ref: navbarLink.linkName, duration: 1000, offset: -60 }}
+				use:scrollTo={{ ref: navbarLink.goTo, duration: 1000, offset: -60 }}
 				><img
 					class={navbarLink.linkName !== 'Logo' ? classImg : classImgLogo}
 					src={navbarLink.src}

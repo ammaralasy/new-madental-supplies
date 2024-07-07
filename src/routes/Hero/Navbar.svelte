@@ -6,7 +6,8 @@
 		'flex items-center justify-start  sm:justify-center space-x-10 sm:space-x-6 h-full w-full navbar-mobile';
 	const classImgLeftIcons = 'hidden sm:block h-4 md:h-4 lg:h-5';
 	const classImgNavIcon = ' navbar-icon sm:hidden h-8 w-9 max-w-md';
-	let classContains: boolean = false;
+	let classContains: boolean;
+
 	//let navbarClicked: boolean = false;
 	//let handleClick;
 </script>
@@ -15,6 +16,7 @@
 	<div class="mx-auto px-4 sm:px-8">
 		<div class="flex justify-between items-center h-[80px] font-montserrat w-full">
 			<!-- Left side icons -->
+			<!-- svelte-ignore missing-declaration -->
 			<NavbarLinksMobile
 				{classContains}
 				{classMainLeftIcons}

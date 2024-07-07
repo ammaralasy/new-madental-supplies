@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { scrollRef } from 'svelte-scrolling';
+	import { scrollingStore } from '../store.js';
+	import { scrollTo } from 'svelte-scrolling';
 </script>
 
 <div
@@ -39,8 +41,10 @@
 					Call now
 				</a>
 				<a
-					href="mailto:info@example.com"
+					href="#write-to-us"
 					class=" bg-madental-red hover:bg-red-700 text-white font-montserrat font-light py-2 px-4 rounded shadow-lg transition duration-300 ease-in-out"
+					use:scrollTo={{ ref:'write-to-us', duration: 1000, offset: -60 }}
+					on:click|preventDefault= {window.matchMedia('(max-width: 640px)').matches ? () => $scrollingStore('write-to-us') : null}
 				>
 					Write to us
 				</a>
